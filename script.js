@@ -5,7 +5,6 @@ button.addEventListener("click", function () {
   let name = prompt("Enter your name:");
   let hobby = prompt("Enter your favourite hobby:");
 
-  // Extra feature: default name if blank
   if (!name || name.trim() === "") {
     name = "Guest";
   }
@@ -14,5 +13,12 @@ button.addEventListener("click", function () {
     hobby = "something awesome";
   }
 
-  output.textContent = `Hello ${name}! Your favourite hobby is ${hobby}.`;
+  const now = new Date();
+  const dateTime = now.toLocaleString();
+
+  output.innerHTML = `
+    Hello <strong>${name}</strong>!<br>
+    Your favourite hobby is <strong>${hobby}</strong>.<br>
+    <em>Current date and time:</em> ${dateTime}
+  `;
 });
