@@ -1,12 +1,12 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f0f4ff;
+  background: linear-gradient(135deg, #ff2f92, #ff69b4);
   margin: 0;
   padding: 0;
 }
 
 header {
-  background: #2b59ff;
+  background: #ff1493;
   color: white;
   padding: 20px;
   text-align: center;
@@ -14,35 +14,41 @@ header {
 
 main {
   max-width: 600px;
-  margin: 30px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 16px;
+  color: #222;
 }
 
 #proceedBtn {
-  padding: 10px 18px;
+  padding: 12px 24px;
   font-size: 16px;
-  border: 2px solid #2b59ff;
-  background: #2b59ff;
+  border: none;
+  background: linear-gradient(135deg, #ff1493, #ff69b4);
   color: white;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 #proceedBtn:hover {
-  background: #1f45cc;
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
 }
 
 #opArea {
-  margin-top: 20px;
-  padding: 12px;
-  border: 2px dashed #2b59ff;
-  border-radius: 8px;
-  min-height: 24px;
+  margin-top: 25px;
+  padding: 15px;
+  border: 2px solid #ff1493;
+  border-radius: 10px;
+  background: #fff0f6;
+  min-height: 30px;
+  color: #c2185b;
+  font-weight: bold;
 }
